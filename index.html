@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng Năng lượng mặt trời</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Ứng dụng Năng lượng mặt trời</h1>
+        <nav>
+            <ul>
+                <li><a href="#calculator">Tính toán Tiết kiệm</a></li>
+                <li><a href="#tracker">Theo dõi Hiệu suất</a></li>
+                <li><a href="#providers">Tìm kiếm Nhà cung cấp</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="calculator">
+            <h2>Tính toán Tiết kiệm</h2>
+            <form id="savings-form">
+                <label for="consumption">Mức tiêu thụ điện hàng tháng (kWh):</label>
+                <input type="number" id="consumption" required>
+                <label for="location">Vị trí của bạn:</label>
+                <input type="text" id="location" required>
+                <button type="submit">Tính toán</button>
+            </form>
+            <div id="savings-result"></div>
+        </section>
+        <section id="tracker" class="hidden">
+            <h2>Theo dõi Hiệu suất</h2>
+            <form id="tracker-form">
+                <label for="system-id">ID Hệ thống:</label>
+                <input type="text" id="system-id" required>
+                <button type="submit">Theo dõi</button>
+            </form>
+            <div id="tracker-result"></div>
+        </section>
+        <section id="providers" class="hidden">
+            <h2>Tìm kiếm Nhà cung cấp</h2>
+            <p>Nội dung cho tính năng tìm kiếm nhà cung cấp sẽ được thêm vào đây.</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
